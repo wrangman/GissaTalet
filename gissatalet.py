@@ -3,12 +3,11 @@ GISSATALET.PY: A number guessing game
 
 __author__  = "Johan Wrangö"
 __credits__ = ["Anne Onym", "Pseudo Nyman", "John Noname"]
-__version__ = "1.0.2"
+__version__ = "1.0.3"
 __email__   = "johan.wrango@ntig.se"
 '''
 
-import random                                   #så jag kan använda slumpfunktioner
-import sys                                      #så jag kan använda sys.exit() funktionen som avslutar program direkt
+import random                                   #så jag kan använda slumpfunktioner                                 
 import os                                       #för os.system() så jag kan sudda skärmen
 
 
@@ -56,4 +55,4 @@ while True:                                     #Huvudloop så man kan köra fle
     try_again = input('Spela igen? (Enter = Ja / N = Nej) ').upper()
     if try_again == 'N' or try_again == 'NEJ':
         print('Tack för du spelade - ses nästa gång!')
-        sys.exit()                             #Här kan man använda break istället - men gör såhär för att visa hur man kan avsluta programmet direkt med ett kommando från modulen sys.
+        exit()                             #Här kan man använda break istället - men gör såhär för att visa hur man kan avsluta programmet direkt med ett kommando
