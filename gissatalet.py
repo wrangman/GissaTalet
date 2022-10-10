@@ -29,12 +29,11 @@ while True:                                     #Huvudloop så man kan köra fle
     total_guesses = 0
 
     while total_guesses <= 7:                   #Spelloop: Aktuellt spel
-        while True:                             #Input-koll-loop - kollar så man matar in rätt innan programmet fortsätter
-            try:
-                guess = int(input('Gissa mitt hemliga tal: '))
-                break
-            except ValueError:
-                print(colored(255, 0, 0, 'Du måste skriva ett heltal - pröva igen\n'))
+        try:
+            guess = int(input('Gissa mitt hemliga tal: '))
+        except ValueError:
+            print(colored(255, 0, 0, 'Du måste skriva ett heltal - pröva igen\n'))
+            continue
         
         total_guesses += 1
         
