@@ -3,7 +3,7 @@ GISSATALET.PY: A number guessing game
 
 __author__  = "Johan Wrangö"
 __credits__ = ["Anne Onym", "Pseudo Nyman", "John Noname"]
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 __email__   = "johan.wrango@ntig.se"
 '''
 
